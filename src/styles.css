@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: sans-serif;
+}
+
+h1, h2{
+    color: green;
+}
+button{
+    padding:15px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #69f4a0;
+    font-weight: bold;
+    cursor: pointer;
+}
+input{
+    padding:15px 0  15px 5px;
+    border-radius: 20px;
+    border: 5px solid #a069f4;
+    font-weight: bold;
+    cursor: pointer;
+}
