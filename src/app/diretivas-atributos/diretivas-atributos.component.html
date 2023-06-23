@@ -1,3 +1,38 @@
 <h2>NG Class</h2>
 
 <p [ngClass]="{ 'active': valor, 'disabled': !valor}">Teste</p>
+
+<hr>
+<h2> NG STYLE
+</h2>
+<div class="div">
+<p [ngStyle]="{ 'height': height}" class="back">Teste</p>
+</div>
+
+
+<hr>
+
+
+<h2>NG MODEL</h2>
+<span> adcione na lista </span>
+
+
+
+<div class="model">
+<input [(ngModel)]='nome'>
+<br>
+<button class="botao" (click)="salvar()">Salvar</button>
+<li *ngFor="let item of list ">
+{{item.nome}}
+</li>
+</div>
+
+<br>
+<hr>
+<h2>ng templates</h2>
+ <ng-template ngFor let-item [ngForOf]=" list" >
+  <h4>{{item.nome}}</h4>
+ </ng-template>
+ <input [(ngModel)]='nome'>
+<br>
+<button class="botao" (click)="salvar()">Salvar</button>
